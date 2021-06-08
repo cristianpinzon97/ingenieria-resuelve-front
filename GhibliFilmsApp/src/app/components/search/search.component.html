@@ -1,0 +1,19 @@
+<div class="container m">
+    <div class="row">
+        <div class="col">
+            <input #termino type="text" (keyup)="search(termino.value)" class="form-control" placeholder="Search film title" />
+        </div>
+    </div>
+
+    <div class="container m-5">
+        <app-loading *ngIf="loading"></app-loading>
+
+        <div *ngIf="error" class="alert alert-danger text-center animated fadeIn">
+            <h3>Error</h3>
+            <p>
+                {{ menssageError }}
+            </p>
+        </div>
+    </div>
+    <app-cards [items]="filmsFilter" *ngIf="!loading"></app-cards>
+</div>

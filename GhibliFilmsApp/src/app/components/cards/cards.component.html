@@ -1,0 +1,15 @@
+<div class="card-columns m-5 animated fadeIn">
+    <div (click)="seeFilm(item)" *ngFor="let item of items" class="card puntero">
+        <div class="card-header bg-dark">{{ item.original_title }}</div>
+        <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.description | truncatePipe:[250, ' See more...'] }}</p>
+            <!-- <button (click)="seeFilm(item)" type="button" class="btn btn-outline-primary btn-block">
+            See more
+            </button> -->
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Release on {{ item.release_date }}</small>
+        </div>
+    </div>
+</div>
