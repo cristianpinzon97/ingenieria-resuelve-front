@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { TruncatePipePipe } from './pipes/truncate-pipe.pipe';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TruncatePipePipe } from './pipes/truncate-pipe.pipe';
     NavbarComponent,
     CardsComponent,
     LoadingComponent,
-    TruncatePipePipe
+    TruncatePipePipe,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
