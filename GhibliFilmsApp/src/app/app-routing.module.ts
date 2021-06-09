@@ -4,6 +4,9 @@ import { SearchComponent } from './components/search/search.component';
 import { HomeComponent } from './components/home/home.component';
 import { FilmComponent } from './components/film/film.component';
 
+/**
+ * Constants for the routing
+ */
 const routes: Routes = [
   {path: 'search', component: SearchComponent},
   {path: 'home', component: HomeComponent},
@@ -12,7 +15,9 @@ const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'}
 ];
 
-
+/**
+ * Module for the routes
+ */
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

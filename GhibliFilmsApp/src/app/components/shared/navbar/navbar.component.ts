@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/**
+ * Nav bar component
+ */
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,6 +11,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  constructor() { }
+  constructor() {
+    // Generated constructor
+  }
 
 }

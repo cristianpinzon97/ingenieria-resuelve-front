@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { GhibliFilmsService } from '../../services/ghibli-films.service';
 
+/**
+ * Film component to manage a film data
+ */
 @Component({
   selector: 'app-film',
   templateUrl: './film.component.html',
@@ -15,6 +18,12 @@ export class FilmComponent {
   refresh the page or try it later.
   Message Error: `;
 
+  /**
+   * Constructor for the component Film component
+   *
+   * @param activateRoute active router
+   * @param ghibliFilmsService ghibli fimls service
+   */
   constructor(
     private activateRoute: ActivatedRoute,
     private ghibliFilmsService: GhibliFilmsService

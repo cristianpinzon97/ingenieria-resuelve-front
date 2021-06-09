@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { GhibliFilmsService } from 'src/app/services/ghibli-films.service';
 
+/**
+ * Search component for getting films information
+ */
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -15,6 +18,10 @@ export class SearchComponent {
   refresh the page or try it later.
   Message Error: `;
 
+  /**
+   * Constructor for the search component
+   * @param ghibliService ghibli film service
+   */
   constructor(private ghibliService: GhibliFilmsService) {
     this.loading = true;
     this.ghibliService.getFilms().subscribe((data: any) => {
@@ -30,11 +37,15 @@ export class SearchComponent {
   );
   }
 
-  search(termino: string) {
+  /**
+   * Searches  films that match with the term given
+   * @param term title of the film
+   */
+  search(term: string) {
     this.loading = true;
-    if (termino) {
-      this.filmsFilter = this.films.filter(it => {
-        return it['title'].toLocaleLowerCase().includes(termino);
+    if (term) {
+      this.filmsFilter = this.films.filter(film => {
+        return film['title'].toLocaleLowerCase().includes(term.toLowerCase());
       });
     } else {
       this.filmsFilter = this.films;
