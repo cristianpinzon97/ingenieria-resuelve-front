@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GhibliFilmsService } from 'src/app/services/ghibli-films.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { GhibliFilmsService } from 'src/app/services/ghibli-films.service';
   templateUrl: './search.component.html',
   styles: [],
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent {
   films: any[] = [];
   filmsFilter: any[] = [];
   loading: boolean;
@@ -19,6 +19,7 @@ export class SearchComponent implements OnInit {
     this.loading = true;
     this.ghibliService.getFilms().subscribe((data: any) => {
       this.films = data;
+      this.filmsFilter = data;
       this.loading = false;
     },
     (errorService) => {
@@ -41,5 +42,4 @@ export class SearchComponent implements OnInit {
     this.loading = false;
 
   }
-  ngOnInit(): void {}
 }

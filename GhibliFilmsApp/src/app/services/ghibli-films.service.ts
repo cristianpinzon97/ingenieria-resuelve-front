@@ -17,4 +17,8 @@ export class GhibliFilmsService {
   getFilms() {
     return this.getQuery('films');
   }
+
+  getFilm(id: string){
+    return this.getQuery(`films/${id}`);
+  }
 }
