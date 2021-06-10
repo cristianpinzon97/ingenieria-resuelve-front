@@ -29,4 +29,4 @@ As mentioned before the project was created as a SPA (Single Page Application). 
 
 Even the application does not have automatic tests, some of the cases were tested doing unit tests.
 
-You can fine the application deployed Following the next link [GhibliFilmsApp](https://tranquil-inlet-18281.herokuapp.com/)
+You can find the application deployed Following the next link [GhibliFilmsApp](https://tranquil-inlet-18281.herokuapp.com/)
