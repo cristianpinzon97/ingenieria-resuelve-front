@@ -1,27 +1,32 @@
 # GhibliFilmsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+The purpose of this project is:
+* Create an application that lists and allows you to search for Ghibli estudio films. the Seeker have to support autocomplete.
 
-## Development server
+the application given was created following a SPA (Single Page Application). Not only does it allow to have an excellent user experience, but also it a quick solution.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## architecture
 
-## Code scaffolding
+As mentioned before the project was created as a SPA (Single Page Application). A SPAs are applications that only haves one URL and is loaded just one time. Under the same URL all the components and procedures will be executed.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Trade-offs
 
-## Build
+1. I would like to improve the homepage, putting more infomation, trying to make it more friendly to the user.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2. I will put the content in the middle, whe the page is open on a big screen all the DOM is more in the left side rather than the rigth side.
 
-## Running unit tests
+3. I would add more images for each film information page that could load different images each time.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Improve the serch method for the films.
 
-## Running end-to-end tests
+5. Create Testing sets, 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Code that i'm proud of 
 
-## Further help
+[Code](https://github.com/cristianpinzon97/ingenieria-resuelve-front/blob/main/src/app/components/search/search.component.ts#L12) - Search Filter
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Deployed application
+
+Even the application does not have automatic tests, some of the cases were tested doing unit tests.
+
+You can fine the application deployed Following the next link [GhibliFilmsApp](https://tranquil-inlet-18281.herokuapp.com/)
